@@ -86,7 +86,7 @@ const Todo = () => {
                 {
                     items.map((curElem) => {
                         return (
-                            <div className="card py-0 my-1 setwidth mx-auto" key={curElem.id}>
+                            <div className="card py-0 my-1 setwidth mx-auto onhover" key={curElem.id}>
                                 <div className="card-body input-group py-1">
                                     <p className="mx-auto card-title">{curElem.name}</p>
                                     <button type="button" className="mx-1 btn btn-sm btn-outline-primary" onClick={() => editItem(curElem.id)}>Edit</button>
@@ -101,6 +101,7 @@ const Todo = () => {
                     <button type="button" className="mx-auto btn btn-outline-info" onClick={() => setItems([])}>Check List</button>
                 </div>
             </div>
+            
         </>
     )
 }

@@ -3,9 +3,13 @@ body{
 }
 
 .setwidth {
-    width: 700px;
+    width: 50%;
 }
 
 .txtcol {
     color: white;
+}
+
+.onhover:hover {
+    background-color: rgb(198, 241, 243);
 }
